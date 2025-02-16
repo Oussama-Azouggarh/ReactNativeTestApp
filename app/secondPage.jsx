@@ -2,7 +2,7 @@ import React from "react";
 import { View, Button, Text , TouchableOpacity } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack"; 
 import MapsScreen from "./maps";  
-import Video360 from "./video360"; 
+import App from "./video360"; 
 
 
 
@@ -13,7 +13,7 @@ export default function SecondPage() {
         <Stack.Navigator>
             <Stack.Screen name="Home Page" component={SecondPageScreen}  />
             <Stack.Screen name="Maps" component={MapsScreen} />
-            <Stack.Screen name="Video-360" component={Video360}   options={{ gestureEnabled: false }} />
+            <Stack.Screen name="Video-360" component={App}   options={{ gestureEnabled: false }} />
         </Stack.Navigator>
     );
 }
